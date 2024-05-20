@@ -4,14 +4,14 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "node",    
     "lib": ["es2016", "esnext", "dom"],
     "outDir": "./build",
     "strict": true,
     "strictNullChecks": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "declaration": true,
+    "declaration": true
   },
   "include": ["src"],
   "exclude": ["build"]
