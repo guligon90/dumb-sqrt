@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  server:
+    container_name: "dumb-sqrt-ctnr"
+    image: "tsoding/dumb-sqrt"
+    build:
+      context: .
+      dockerfile: ./infra/docker/server/Dockerfile
+    ports:
+      - target: 80
+        published: 8888
+    networks:
+      - default
+
+networks:
+  default:
