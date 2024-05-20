@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "prebuild": "rimraf ./build",
-    "build": "tsc",
+    "build": "tsc -p tsconfig.json",
+    "compose:build": "docker compose build server",
+    "compose:start": "docker compose up server",
     "watch": "tsc --watch",
     "update:check": "ncu",
     "update:apply": "ncu -u",
