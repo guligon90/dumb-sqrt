@@ -1,6 +1,6 @@
-import BinarySearchWidget from "./algorithms/binary-search";
-import NewtonMethodWidget from "./algorithms/newton-raphson";
-import { Widget } from "./definitions/interfaces";
+import BinarySearchWidget from "./algorithms/binary-search/index.js";
+import NewtonMethodWidget from "./algorithms/newton-raphson/index.js";
+import { Widget } from "./definitions/interfaces.js";
 
 let widgets: Widget[] = [
     new BinarySearchWidget("app-binary-search", 9),

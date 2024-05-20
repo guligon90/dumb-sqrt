@@ -1,5 +1,5 @@
-import { MIN_X, MIN_Y, MAX_X, MAX_Y } from "../../definitions/constants";
-import { CanvasPoint, ClientPoint, Point, PlotPoint } from "../../definitions/types";
+import { MIN_X, MIN_Y, MAX_X, MAX_Y } from "../../definitions/constants.js";
+import { CanvasPoint, ClientPoint, Point, PlotPoint } from "../../definitions/types.js";
 
 // Canvas has two sizes:
 // 1. *Canvas Size*. `[canvas.width, canvas.height]` which is set via the correspoding properties: `<canvas width='800' height='600'>`. This is the logical resolution of the canvas that is used by all of the drawing method of the canvas.

@@ -1,9 +1,9 @@
-import { EPSILON, MAX_ITERATIONS, MARKER_COLOR, MIN_X, MIN_Y, MAX_X, MAX_Y, TRACE_INTERVAL } from "../../definitions/constants";
-import { Widget } from "../../definitions/interfaces";
-import { ClientPoint, Point, PlotPoint } from "../../definitions/types";
-import { mapCanvasToPlot, mapClientToCanvas, mapPlotToCanvas, strokeLine } from "../../actions/mapping";
-import { renderAxis, renderDiagonal, renderGrid, renderMarker, renderPlot } from "../../actions/rendering";
-import { lerp } from "../common";
+import { EPSILON, MAX_ITERATIONS, MARKER_COLOR, MIN_X, MIN_Y, MAX_X, MAX_Y, TRACE_INTERVAL } from "../../definitions/constants.js";
+import { Widget } from "../../definitions/interfaces.js";
+import { ClientPoint, Point, PlotPoint } from "../../definitions/types.js";
+import { mapCanvasToPlot, mapClientToCanvas, mapPlotToCanvas, strokeLine } from "../../actions/mapping/index.js";
+import { renderAxis, renderDiagonal, renderGrid, renderMarker, renderPlot } from "../../actions/rendering/index.js";
+import { lerp } from "../common.js";
 
 export function newtonMethodSqrt(a: number, trace?: (x: number) => void)
 {

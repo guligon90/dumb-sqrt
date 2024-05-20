@@ -1,4 +1,4 @@
-import { Color } from "./types";
+import { Color } from "./types.js";
 
 export const EPSILON: number = 1e-6;
 export const MAX_ITERATIONS: number = 15;

@@ -1,7 +1,6 @@
-import { AXIS_COLOR, GRID_COLOR, GRID_STEP, MARKER_COLOR, MARKER_SIZE, MIN_X, MIN_Y, MAX_X, MAX_Y, STEP_Y } from "../../definitions/constants";
-import { PlotPoint } from "../../definitions/types";
-import { mapPlotToCanvas, strokeLine } from "../mapping";
-
+import { AXIS_COLOR, GRID_COLOR, GRID_STEP, MARKER_COLOR, MARKER_SIZE, MIN_X, MIN_Y, MAX_X, MAX_Y, STEP_Y } from "../../definitions/constants.js";
+import { PlotPoint } from "../../definitions/types.js";
+import { mapPlotToCanvas, strokeLine } from "../mapping/index.js";
 
 export function renderGrid(ctx: CanvasRenderingContext2D) {
     ctx.strokeStyle = GRID_COLOR;
